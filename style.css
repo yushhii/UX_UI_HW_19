@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Vollkorn:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap');
+
+*  {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10px;
+    background-color: #ffffff;
+    font-family: 'Vollkorn', serif;
+    padding: 25px 5%;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+   
+}
+.navLinks li{
+    list-style: none;
+}
+.navLinks a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    
+}
+
+.primary {
+    display: inline-block;
+    position: relative;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid #EC854B;
+    color: #EC854B;
+    background-color: #ffffff;
+    font-family: 'Vollkorn', serif;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.primary:hover {
+    color: #ffffff;
+}
+
+.primary span{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background: #EC854B;
+    transition: width 0.5s, height 0.5s;
+    z-index: -1;
+}
+
+.primary:hover span {
+    width: 300px;
+    height: 300px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(./heroimage.png) no-repeat center / cover;
+}
+
+.info h2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 10%;
+    
+}
+.info p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 10%;
+    width: 60%;
+}
+
+.logo h1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Sacramento', cursive;
+    padding: 1px 20%;
+}
+
+#a {
+    padding-top: 55px;
+    padding-bottom: 0%;
+    margin: 0%;
+    font-size: 100px;
+}
+
+#p {
+    margin-top: -90px;
+    padding-left: 430px;
+    color: #EC854B;
+    font-size: 100px;
+}
+
+footer{
+    padding: 40px;
+}
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.footerLinks li {
+    list-style: none;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+ /* My UX Skills section coded using CSS flex  */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.info_me {
+    width: 90%;
+    margin: 50px auto;
+}
+.info-card {
+    width: 275px;
+    height: 300px;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    border: 0.5px solid #737373;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(87, 87, 87, 0.25);
+}
+
+.card-header {
+    text-align: center;
+    width: 86px;
+    height: 86px;
+    margin-top: 50px;
+    margin-left: 90px;
+    padding: 30px 20px;
+    border-radius: 50%;
+    box-shadow: 0px 3.18519px 3.18519px #84A59D;
+    color: #FFFFFF;
+    background-color: #2a6f6c;
+    font-size: 30px;
+}
+
+.card-body {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h4 {
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.workSection {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.imgPlaceholder {
+    width: 448px;
+    height: 465px;
+    background: url(./placeholderimage.png)
+}
+
+.projectDetails {
+    text-align: center;
+    margin-top: 50px;
+    width: 448px;
+    height: 465px;
+}
+
+.projectDetails h1 {
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.projectDetails p {
+    padding: 40px 0;
+}
+
+a {
+    text-decoration: none;   
+}
+
+@media only screen and (max-width: 600){
+    .row{
+        flex-direction: column;
+    }
+    .info-card {
+        width: 40%;
+    }
+}
